@@ -26,3 +26,22 @@ const track = document.getElementById("servicesTrack");
     track.addEventListener("scroll", updateArrows);
     window.addEventListener("load", updateArrows);
     window.addEventListener("resize", updateArrows);
+
+    //Review Section
+    document.addEventListener("DOMContentLoaded", function () {
+    const cards = document.querySelectorAll(".review-flip-card");
+
+    cards.forEach((card) => {
+      card.addEventListener("click", function (e) {
+        if (e.target.closest("a")) return;
+        this.classList.toggle("is-flipped");
+      });
+
+      card.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          this.classList.toggle("is-flipped");
+        }
+      });
+    });
+  });

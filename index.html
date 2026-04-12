@@ -6,6 +6,8 @@
     <title>Express Stitch Lab</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Top bar -->
@@ -19,7 +21,7 @@
 </div>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg py-3 custom-navbar">
+<nav id="scrol-1" class="navbar navbar-expand-lg py-3 custom-navbar">
   <div class="container">
 
     <!-- Brand / Logo -->
@@ -38,19 +40,22 @@
       <!-- Center nav links -->
       <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-uppercase fw-medium">
         <li class="nav-item">
-          <a class="nav-link px-3" href="#">Home</a>
+          <a class="nav-link px-3" href="#scrol-1">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link px-3" href="#">Services</a>
+          <a class="nav-link px-3"  href="#scrol-2">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link px-3" href="#">Weddings</a>
+          <a class="nav-link px-3"  href="#scrol-3">Prices</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link px-3" href="#">Bridal</a>
+          <a class="nav-link px-3" href="#scrol-4">Reviews</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link px-3" href="#">Contact</a>
+          <a class="nav-link px-3" href="#scrol-6">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3" href="#scrol-5">Contact</a>
         </li>
       </ul>
 
@@ -80,11 +85,10 @@
 </section>
 
 <!--Service Section-->
- <section class="featured-services-section">
+ <section  id="scrol-2" class="featured-services-section">
     <div class="container">
       <div class="text-center">
-        <h2 class="section-title text-uppercase">Featured Services</h2>
-        <button class="btn view-all-btn">View All</button>
+        <h2 class="section-title text-uppercase" id="linkk">Featured Services</h2>
       </div>
 
       <div class="services-carousel-wrap">
@@ -100,7 +104,7 @@
         <div class="services-track" id="servicesTrack">
           <div class="service-slide">
             <div class="service-card">
-              <div class="service-image-placeholder"></div>
+              <div class="service-image-placeholder"><img src="pic/hamming.jpg" alt="hamming picture"></div>
               <div class="service-card-body text-center">
                 <h3 class="service-name h6 mb-1">Trouser Hemming</h3>
                
@@ -110,17 +114,26 @@
 
           <div class="service-slide">
             <div class="service-card">
-              <div class="service-image-placeholder"></div>
+            <div class="service-image-placeholder"><img src="pic/shirt.jpg" alt="shirt"></div>
               <div class="service-card-body text-center">
                 <h3 class="service-name h6 mb-1">Shirt Fitting</h3>
                 
               </div>
             </div>
           </div>
+          <div class="service-slide">
+            <div class="service-card">
+              <div class="service-image-placeholder"><img src="pic/ladies dress.jpg" alt=""></div>
+              <div class="service-card-body text-center">
+                <h3 class="service-name h6 mb-1">Dress Tailoring</h3>
+             
+              </div>
+            </div>
+          </div>
 
           <div class="service-slide">
             <div class="service-card">
-              <div class="service-image-placeholder"></div>
+              <div class="service-image-placeholder"><img src="pic/zipper.jpg" alt="Zipper"></div>
               <div class="service-card-body text-center">
                 <h3 class="service-name h6 mb-1">Zip Replacement</h3>
                 
@@ -130,7 +143,7 @@
 
           <div class="service-slide">
             <div class="service-card">
-              <div class="service-image-placeholder"></div>
+              <div class="service-image-placeholder"><img src="pic/suite.jpg" alt="Suite"></div>
               <div class="service-card-body text-center">
                 <h3 class="service-name h6 mb-1">Suit Alteration</h3>
                 
@@ -140,9 +153,28 @@
 
           <div class="service-slide">
             <div class="service-card">
-              <div class="service-image-placeholder"></div>
+              <div class="service-image-placeholder"><img src="pic/size.jpg" alt=""></div>
               <div class="service-card-body text-center">
-                <h3 class="service-name h6 mb-1">Dress Tailoring</h3>
+                <h3 class="service-name h6 mb-1">Custom Measurements</h3>
+             
+              </div>
+            </div>
+          </div>
+          
+          <div class="service-slide">
+            <div class="service-card">
+              <div class="service-image-placeholder"><img src="pic/coat.jpg" alt=""></div>
+              <div class="service-card-body text-center">
+                <h3 class="service-name h6 mb-1">Coat Alterations</h3>
+             
+              </div>
+            </div>
+          </div>
+          <div class="service-slide">
+            <div class="service-card">
+              <div class="service-image-placeholder"><img src="pic/additionaal-2.jpg" alt=""></div>
+              <div class="service-card-body text-center">
+                <h3 class="service-name h6 mb-1">Have something specific? We’ve got you covered</h3>
              
               </div>
             </div>
@@ -161,6 +193,521 @@
     </div>
   </section>
 
+<!--Price List-->
+<section id="scrol-3" class="price-list-section">
+  <div class="container">
+    <div class="price-card">
+      <h2>Price List</h2>
+      <hr class="price-divider">
+
+      <div class="table-responsive">
+        <table class="table price-table align-middle">
+          <thead>
+            <tr>
+              <th>SERVICE</th>
+              <th>PRICE</th>
+              <th>DURATION</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="service-name">Trouser Hemming</td>
+              <td class="service-price">$20</td>
+              <td>1 Day</td>
+            </tr>
+            <tr>
+              <td class="service-name">Shirt Fitting</td>
+              <td class="service-price">$30</td>
+              <td>2 Days</td>
+            </tr>
+            <tr>
+              <td class="service-name">Zip Replacement</td>
+              <td class="service-price">$20</td>
+              <td>1 Day</td>
+            </tr>
+            <tr>
+              <td class="service-name">Suit Alteration</td>
+              <td class="service-price">$120</td>
+              <td>3 Days</td>
+            </tr>
+            <tr>
+              <td class="service-name">Dress Tailoring</td>
+              <td class="service-price">$90</td>
+              <td>3 Days</td>
+            </tr>
+            <tr>
+              <td class="service-name">Jacket Sleeve Shortening</td>
+              <td class="service-price">$55</td>
+              <td>2 Days</td>
+            </tr>
+            <tr>
+              <td class="service-name">Waist Adjustment</td>
+              <td class="service-price">$25</td>
+              <td>1 Day</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Reviews-->
+<section id="scrol-4" class="customer-reviews py-5">
+  <div class="container py-4">
+    <div class="text-center mb-5">
+      <h2 class="fw-semibold">What Our Customers Say</h2>
+      <p class="text-muted mb-0">Tailoring, alterations, and trusted craftsmanship.</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="review-flip-card" tabindex="0">
+          <div class="review-flip-inner">
+            <div class="review-face review-front">
+              <div class="review-icon">💬</div>
+              <h5 class="review-name fw-bold mb-2">An Nguyen</h5>
+              <div class="review-stars mb-3">★★★★★</div>
+              <p class="review-text mb-0">
+               "My wedding alteration was done beautifully and quickly. It was a two week turn around time and she was very sweet and prompt. I will be using her all my alterations from here on out. The cost was also very reasonable. Thank you so much! :)"
+              </p>
+            </div>
+            <div class="review-face review-back">
+              <p class="mb-3 fw-medium">Read this review on Google Maps</p>
+              <a href="https://www.google.com/maps/place/Express+Stitch+Lab/@33.4985447,-112.3262831,775m/data=!3m1!1e3!4m8!3m7!1s0x872b41601b6f12bb:0xb787f2c892a35e1d!8m2!3d33.4985447!4d-112.3262831!9m1!1b1!16s%2Fg%2F11yn3ydjps?entry=ttu&g_ep=EgoyMDI2MDQwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn review-btn">
+                View on Google Maps
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="review-flip-card" tabindex="0">
+          <div class="review-flip-inner">
+            <div class="review-face review-front">
+              <div class="review-icon">⭐</div>
+              <h5 class="review-name fw-bold mb-2">Ashley Terrazas</h5>
+              <div class="review-stars mb-3">★★★★★</div>
+              <p class="review-text mb-0">
+                "She is very sweet, very reasonably priced & has such quick turnarounds! I will be going to her for all of my alterations from now on!"
+              </p>
+            </div>
+            <div class="review-face review-back">
+              <p class="mb-3 fw-medium">Read this review on Google Maps</p>
+              <a href="https://www.google.com/maps/contrib/110336223575351030562/place/ChIJuxJvG2BBK4cRHV6jksjyh7c/@33.4985447,-114.9630019,793578m/data=!3m1!1e3!4m6!1m5!8m4!1e1!2s110336223575351030562!3m1!1e1?hl=en-US&entry=ttu&g_ep=EgoyMDI2MDQwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn review-btn">
+                View on Google Maps
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="review-flip-card" tabindex="0">
+          <div class="review-flip-inner">
+            <div class="review-face review-front">
+              <div class="review-icon">🧵</div>
+              <h5 class="review-name fw-bold mb-2">Aisha King</h5>
+              <div class="review-stars mb-3">★★★★★</div>
+              <p class="review-text mb-0">
+                "I have found our family seamstress!!  I recently lost a significant amount of weight. Several of favorite pieces were altered and fit better than when purchased.  Exceptional prices, service, and turnaround time."
+              </p>
+            </div>
+            <div class="review-face review-back">
+              <p class="mb-3 fw-medium">Read this review on Google Maps</p>
+              <a href="https://www.google.com/maps/contrib/101138725681839771837/place/ChIJuxJvG2BBK4cRHV6jksjyh7c/@33.4985447,-112.3262831,775m/data=!3m2!1e3!4b1!4m8!1m7!3m6!1s0x872b41601b6f12bb:0xb787f2c892a35e1d!2sExpress+Stitch+Lab!8m2!3d33.4985447!4d-112.3262831!16s%2Fg%2F11yn3ydjps?hl=en-US&entry=ttu&g_ep=EgoyMDI2MDQwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn review-btn">
+                View on Google Maps
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="review-flip-card" tabindex="0">
+          <div class="review-flip-inner">
+            <div class="review-face review-front">
+              <div class="review-icon">🪡</div>
+              <h5 class="review-name fw-bold mb-2">Emily Catherine</h5>
+              <div class="review-stars mb-3">★★★★★</div>
+              <p class="review-text mb-0">
+                "She was so sweet and helpful! She got my wedding dress done in a week for an unbeatable price! Loved working with her!🥰"
+              </p>
+            </div>
+            <div class="review-face review-back">
+              <p class="mb-3 fw-medium">Read this review on Google Maps</p>
+              <a href="https://www.google.com/maps/contrib/117819403359482144299/place/ChIJuxJvG2BBK4cRHV6jksjyh7c/@38.1006049,-106.7076276,2995511m/data=!3m1!1e3!4m6!1m5!8m4!1e1!2s117819403359482144299!3m1!1e1?hl=en-US&entry=ttu&g_ep=EgoyMDI2MDQwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn review-btn">
+                View on Google Maps
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="review-flip-card" tabindex="0">
+          <div class="review-flip-inner">
+            <div class="review-face review-front">
+              <div class="review-icon">✨</div>
+              <h5 class="review-name fw-bold mb-2">Jessica Kreger</h5>
+              <div class="review-stars mb-3">★★★★★</div>
+              <p class="review-text mb-0">
+                "It is hard to find a talented seamstress these days.  The stitching looks like it came from the factory.  I will definitely go back here again if I need more alterations done."
+              </p>
+            </div>
+            <div class="review-face review-back">
+              <p class="mb-3 fw-medium">Read this review on Google Maps</p>
+              <a href="https://www.google.com/maps/contrib/100439311035575406438/place/ChIJuxJvG2BBK4cRHV6jksjyh7c/@49.1387054,-117.7434327,4980766m/data=!3m1!1e3!4m6!1m5!8m4!1e1!2s100439311035575406438!3m1!1e1?hl=en&entry=ttu&g_ep=EgoyMDI2MDQwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn review-btn">
+                View on Google Maps
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="review-flip-card" tabindex="0">
+          <div class="review-flip-inner">
+            <div class="review-face review-front">
+              <div class="review-icon">🌟</div>
+              <h5 class="review-name fw-bold mb-2">Marjaan Khan</h5>
+              <div class="review-stars mb-3">★★★★★</div>
+              <p class="review-text mb-0">
+                "She consistently completes alterations on time while delivering high-quality work. She is kind, friendly, and professional. I highly recommend her services to anyone in need of alterations."
+              </p>
+            </div>
+            <div class="review-face review-back">
+              <p class="mb-3 fw-medium">Read this review on Google Maps</p>
+              <a href="https://www.google.com/maps/contrib/114590682345187673803/place/ChIJuxJvG2BBK4cRHV6jksjyh7c/@33.4985447,-112.3262831,775m/data=!3m2!1e3!4b1!4m8!1m7!3m6!1s0x872b41601b6f12bb:0xb787f2c892a35e1d!2sExpress+Stitch+Lab!8m2!3d33.4985447!4d-112.3262831!16s%2Fg%2F11yn3ydjps?hl=en-US&entry=ttu&g_ep=EgoyMDI2MDQwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn review-btn">
+                View on Google Maps
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--ABOUT US HERO-->
+<section class="about-hero">
+  <div class="container">
+    <div class="about-hero-content text-start">
+      <h1 class="about-hero-title">About Us</h1>
+      <h2 class="about-hero-subtitle">Who We Are</h2>
+
+      <p class="about-hero-text">
+        We are a local alteration and tailoring store proud to serve our community.
+        With years of experience, we specialize in making your clothes fit perfectly —
+        because the right fit changes everything.
+      </p>
+
+      <p class="about-hero-text">
+        Our focus is simple: quality craftsmanship and honest customer service.
+        Whether it's a small hem or a full suit alteration, every garment is treated
+        with care and attention to detail. We are your neighbors, and we are here for you.
+      </p>
+
+      <a href="#contact" class="about-hero-btn">Book a Fitting</a>
+    </div>
+  </div>
+</section>
+<!--FAQS-->
+<section id="scrol-6" class="faq-section">
+    <div class="container">
+      <div class="faq-wrapper">
+        <h2 class="faq-title">Frequently Asked Questions</h2>
+        <p class="faq-subtitle">Everything you need to know before your visit</p>
+
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Do I need an appointment?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Walk-ins are always welcome. However, we recommend booking an appointment for detailed fittings or during busy hours to ensure the best service.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                How long do alterations take?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Most standard alterations are completed within 1–3 days. More complex tailoring work may take longer depending on the garment and required adjustments.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Do you offer same-day service?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Yes, same-day service is available for select simple alterations. Please contact us in advance to confirm availability.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                How much do alterations cost?
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFour"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Pricing varies based on the type of garment and the complexity of the work. We provide clear estimates before starting any service.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                What types of garments do you work on?
+              </button>
+            </h2>
+            <div
+              id="collapseFive"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFive"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                We work on a wide range of garments including trousers, shirts, suits, dresses, jackets, and more.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSix">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSix"
+                aria-expanded="false"
+                aria-controls="collapseSix"
+              >
+                Can you handle delicate or high-end fabrics?
+              </button>
+            </h2>
+            <div
+              id="collapseSix"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingSix"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Yes, we have experience working with delicate materials such as silk, linen, and formal wear. Each garment is handled with care and precision.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSeven">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSeven"
+                aria-expanded="false"
+                aria-controls="collapseSeven"
+              >
+                What if I'm not satisfied with the fitting?
+              </button>
+            </h2>
+            <div
+              id="collapseSeven"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingSeven"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Customer satisfaction is our priority. If adjustments are needed after fitting, we are happy to make refinements.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingEight">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseEight"
+                aria-expanded="false"
+                aria-controls="collapseEight"
+              >
+                What payment methods do you accept?
+              </button>
+            </h2>
+            <div
+              id="collapseEight"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingEight"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                We accept cash, debit/credit cards, and other standard payment methods. Please contact us if you have specific questions.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!--FOOTER-->
+<footer id="scrol-5" class="tailor-footer">
+  <div class="container">
+    <div class="row g-4 g-lg-5">
+         <!-- Column 1 -->
+      <div class="col-12 col-sm-6 col-lg footer-col">
+  <h6 class="footer-title">Book a Fitting</h6>
+
+  
+
+  <p class="mb-2">
+    📞 <strong>Phone:</strong><br>
+    <a href="tel:+1234567890" class="footer-link">(623) 302-8265 </a>
+  </p>
+
+  <p class="mb-0">
+    ✉️ <strong>Email:</strong><br>
+    <a href="mailto:info@expressstitchlab.com" class="footer-link">
+      abdul.abdul593@gmail.com
+    </a>
+  </p>
+</div>
+         <!-- Column 2 -->
+      <div class="col-12 col-sm-6 col-lg footer-col">
+        <h6 class="footer-title">Location &amp; Hours</h6>
+        <p class="footer-text mb-3">
+          Avondale, AZ 85392
+        </p>
+        <p class="footer-text mb-1">Mon–Sat 10AM – 7PM</p>
+        <p class="footer-text">Sun: Closed</p>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="col-12 col-sm-6 col-lg footer-col">
+        <h6 class="footer-title">Services</h6>
+        <ul class="footer-links">
+          <li><a href="#linkk">Trouser Hemming</a></li>
+          <li><a href="#linkk">Shirt Fitting</a></li>
+          <li><a href="#linkk">Zip Replacement</a></li>
+          <li><a href="#linkk">Suit Alteration</a></li>
+          <li><a href="#linkk">Dress Tailoring</a></li>
+          <li><a href="#linkk">Waist Adjustment</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4 -->
+      <div class="col-12 col-sm-6 col-lg footer-col">
+        <h6 class="footer-title">Quick Links</h6>
+        <ul class="footer-links">
+          <li><a href="#scrol-1">Home</a></li>
+          <li><a href="#scrol-2">About Us</a></li>
+          <li><a href="#scrol-3">Price List</a></li>
+          <li><a href="#scrol-5">Contact Us</a></li>
+          <li><a href="#scrol-6">FAQ</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 5 --> <!--FOR later if needed-->
+    <!--  <div class="col-12 col-sm-6 col-lg footer-col">
+        <h6 class="footer-title">Policies</h6>
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+          <li><a href="#">Refund Policy</a></li>
+          <li><a href="#">Alteration Guarantee</a></li>
+        </ul>
+      </div>-->
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <div class="footer-bottom">
+      Trusted tailoring &amp; alterations in Avondale, Arizona — © 2025 Express Stitch Lab. All rights reserved.
+    </div>
+  </div>
+</footer>
 
 
 
