@@ -45,3 +45,43 @@ const track = document.getElementById("servicesTrack");
       });
     });
   });
+
+  //Form Section
+   document.addEventListener('DOMContentLoaded', function () {
+    const bookingForm = document.getElementById('bookingForm');
+    const preferredDate = document.getElementById('preferredDate');
+    const bookingSuccessAlert = document.getElementById('bookingSuccessAlert');
+    const bookingFormFields = document.getElementById('bookingFormFields');
+
+    // Set min date to today
+    const today = new Date();
+    const year = today.getFullYear();
+    const month = String(today.getMonth() + 1).padStart(2, '0');
+    const day = String(today.getDate()).padStart(2, '0');
+    preferredDate.min = `${year}-${month}-${day}`;
+
+    bookingForm.addEventListener('submit', function (event) {
+      event.preventDefault();
+      event.stopPropagation();
+
+      if (bookingForm.checkValidity()) {
+        bookingForm.classList.add('was-validated');
+        bookingFormFields.classList.add('d-none');
+        bookingSuccessAlert.classList.remove('d-none');
+      } else {
+        bookingForm.classList.add('was-validated');
+        bookingFormFields.classList.remove('d-none');
+        bookingSuccessAlert.classList.add('d-none');
+      }
+    });
+
+    // Optional reset when modal closes so form is fresh next time
+    const bookingModal = document.getElementById('bookingModal');
+    bookingModal.addEventListener('hidden.bs.modal', function () {
+      bookingForm.reset();
+      bookingForm.classList.remove('was-validated');
+      bookingFormFields.classList.remove('d-none');
+      bookingSuccessAlert.classList.add('d-none');
+      preferredDate.min = `${year}-${month}-${day}`;
+    });
+  });

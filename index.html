@@ -76,9 +76,13 @@
       <div class="col-lg-8 col-md-10 col-12">
         <p class="fs-2 text-uppercase mb-2">Look Your Best</p>
         <h1 class="fw-bold mb-4">Expert Alterations for Every Occasion</h1>
-        <a href="#" class="btn text-white fw-semibold rounded-3 hero-btn">
-          Make an Appointment
-        </a>
+  <button 
+  type="button"
+  class="btn text-white fw-semibold rounded-3 hero-btn"
+  data-bs-toggle="modal" 
+  data-bs-target="#bookingModal">
+  Make an Appointment
+</button>
       </div>
     </div>
   </div>
@@ -414,8 +418,14 @@
         Whether it's a small hem or a full suit alteration, every garment is treated
         with care and attention to detail. We are your neighbors, and we are here for you.
       </p>
-
-      <a href="#contact" class="about-hero-btn">Book a Fitting</a>
+      
+      <button 
+  type="button"
+  class="about-hero-btn"
+  data-bs-toggle="modal" 
+  data-bs-target="#bookingModal">
+  Book a Fitting
+</button>
     </div>
   </div>
 </section>
@@ -630,7 +640,155 @@
       </div>
     </div>
   </section>
+<!---FORM SECTION-->
+<section>
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+    <div class="modal-content booking-modal">
+      
+      <div class="modal-header booking-modal-header">
+        <h5 class="modal-title fw-bold" id="bookingModalLabel">Book a Fitting</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
 
+      <div class="modal-body booking-modal-body">
+        <!-- Success Alert -->
+        <div class="alert alert-success d-none" id="bookingSuccessAlert" role="alert">
+          Thank you! Your booking request has been received. We'll be in touch shortly.
+        </div>
+
+        <form id="bookingForm" class="needs-validation" method="POST" action="#" novalidate>
+          <div class="row g-4" id="bookingFormFields">
+            
+            <!-- Row 1 -->
+            <div class="col-12 col-md-6">
+              <label for="fullName" class="form-label booking-label">Full Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="fullName"
+                name="fullName"
+                required
+              >
+              <div class="invalid-feedback">Please enter your full name.</div>
+              <div class="valid-feedback">Looks good.</div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <label for="phoneNumber" class="form-label booking-label">Phone Number</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="phoneNumber"
+                name="phoneNumber"
+                required
+              >
+              <div class="invalid-feedback">Please enter your phone number.</div>
+              <div class="valid-feedback">Looks good.</div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="col-12 col-md-6">
+              <label for="emailAddress" class="form-label booking-label">Email Address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="emailAddress"
+                name="email"
+                required
+              >
+              <div class="invalid-feedback">Please enter a valid email address.</div>
+              <div class="valid-feedback">Looks good.</div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <label for="service" class="form-label booking-label">Service</label>
+              <select
+                class="form-select"
+                id="service"
+                name="service"
+                required
+              >
+                <option value="" selected disabled>Select a Service</option>
+                <option value="Trouser Hemming">Trouser Hemming</option>
+                <option value="Shirt Fitting">Shirt Fitting</option>
+                <option value="Zip Replacement">Zip Replacement</option>
+                <option value="Suit Alteration">Suit Alteration</option>
+                <option value="Dress Tailoring">Dress Tailoring</option>
+                <option value="Waist Adjustment">Waist Adjustment</option>
+                <option value="Other">Other</option>
+              </select>
+              <div class="invalid-feedback">Please select a service.</div>
+              <div class="valid-feedback">Looks good.</div>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="col-12 col-md-6">
+              <label for="preferredDate" class="form-label booking-label">Preferred Date</label>
+              <input
+                type="date"
+                class="form-control"
+                id="preferredDate"
+                name="preferredDate"
+                required
+              >
+              <div class="invalid-feedback">Please choose a preferred date.</div>
+              <div class="valid-feedback">Looks good.</div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <label for="preferredTime" class="form-label booking-label">Preferred Time Slot</label>
+              <select
+                class="form-select"
+                id="preferredTime"
+                name="preferredTime"
+                required
+              >
+                <option value="" selected disabled>Select a Time</option>
+                <option value="10:00 AM - 11:00 AM">10:00 AM – 11:00 AM</option>
+                <option value="11:00 AM - 12:00 PM">11:00 AM – 12:00 PM</option>
+                <option value="12:00 PM - 1:00 PM">12:00 PM – 1:00 PM</option>
+                <option value="2:00 PM - 3:00 PM">2:00 PM – 3:00 PM</option>
+                <option value="3:00 PM - 4:00 PM">3:00 PM – 4:00 PM</option>
+                <option value="4:00 PM - 5:00 PM">4:00 PM – 5:00 PM</option>
+                <option value="5:00 PM - 6:00 PM">5:00 PM – 6:00 PM</option>
+              </select>
+              <div class="invalid-feedback">Please select a time slot.</div>
+              <div class="valid-feedback">Looks good.</div>
+            </div>
+
+            <!-- Row 4 -->
+            <div class="col-12">
+              <label for="additionalNotes" class="form-label booking-label">Additional Notes</label>
+              <textarea
+                class="form-control"
+                id="additionalNotes"
+                name="additionalNotes"
+                rows="4"
+                placeholder="Any details about your garment or special requests..."
+              ></textarea>
+            </div>
+
+          </div>
+        </form>
+      </div>
+
+      <div class="modal-footer booking-modal-footer">
+        <div class="w-100">
+          <button type="submit" form="bookingForm" class="btn booking-submit-btn w-100">
+            Confirm Booking
+          </button>
+          <p class="text-muted small text-center mt-2 mb-0">
+            We will confirm your appointment within 24 hours.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</section>
 
 <!--FOOTER-->
 <footer id="scrol-5" class="tailor-footer">

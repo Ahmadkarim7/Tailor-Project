@@ -846,6 +846,81 @@ transition: 0.5s;
   }
 }
 
+/*FORM SECTION*/
+
+.booking-modal {
+    border: 0;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+
+  .booking-modal-header {
+    background: var(--primarydark);
+    padding: 1rem 1.5rem;
+  }
+
+  .booking-modal-header .modal-title {
+    color: var(--primarycolor);
+  }
+
+  .booking-modal-body {
+    background: #ffffff;
+    padding: 1.75rem 1.5rem;
+  }
+
+  .booking-modal-footer {
+    background: var(--primarydark);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 1rem 1.5rem 1.25rem;
+  }
+
+  .booking-label {
+    font-weight: 700;
+    color: #2f2f2f;
+  }
+
+  .booking-modal .form-control,
+  .booking-modal .form-select {
+    border-radius: 0.65rem;
+    padding: 0.75rem 0.9rem;
+  }
+
+  .booking-modal .form-control:focus,
+  .booking-modal .form-select:focus {
+    border-color: var(--primarylight);
+    box-shadow: 0 0 0 0.2rem rgba(212, 184, 79, 0.25);
+  }
+
+  .booking-submit-btn {
+    background: var(--primarylight);
+    color: #1f1f1f;
+    border: none;
+    border-radius: 0.75rem;
+    padding: 0.85rem 1rem;
+    font-weight: 700;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .booking-submit-btn:hover,
+  .booking-submit-btn:focus {
+    background: var(--primarycolor);
+    color: #ffffff;
+  }
+
+  .booking-submit-btn:focus {
+    box-shadow: 0 0 0 0.2rem rgba(212, 184, 79, 0.25);
+  }
+
+  @media (max-width: 575.98px) {
+    .booking-modal-body,
+    .booking-modal-header,
+    .booking-modal-footer {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+
+
 /*RESPONSIVE SIDE*/
 @media (max-width:320px){
     .navbar-brand{
