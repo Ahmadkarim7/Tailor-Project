@@ -14,8 +14,8 @@
 <div class="container-fluid top-bar text-white py-2">
   <div class="container">
     <div class="row text-center fw-semibold">
-      <div class="col-md-6">MEGA SALE</div>
-      <div class="col-md-6">Take 10% OFF</div>
+      <div class="col-md-6">Expert Tailoring</div>
+      <div class="col-md-6">Express Service Available</div>
     </div>
   </div>
 </div>
@@ -215,39 +215,54 @@
           </thead>
           <tbody>
             <tr>
-              <td class="service-name">Trouser Hemming</td>
-              <td class="service-price">$20</td>
-              <td>1 Day</td>
+              <td class="service-name">All Regular Types of Pants</td>
+              <td class="service-price">$10-15</td>
+              <td>3-7 Business Days</td>
             </tr>
             <tr>
-              <td class="service-name">Shirt Fitting</td>
-              <td class="service-price">$30</td>
-              <td>2 Days</td>
+              <td class="service-name">Dress Pants</td>
+              <td class="service-price">$15-20</td>
+              <td>3-7 Business Days</td>
             </tr>
             <tr>
-              <td class="service-name">Zip Replacement</td>
-              <td class="service-price">$20</td>
-              <td>1 Day</td>
+              <td class="service-name">Jacket Sleeves</td>
+              <td class="service-price">$45-100</td>
+              <td>7-10 Business Days</td>
             </tr>
             <tr>
-              <td class="service-name">Suit Alteration</td>
-              <td class="service-price">$120</td>
-              <td>3 Days</td>
+              <td class="service-name">Vest</td>
+              <td class="service-price">$35-65</td>
+              <td>7-10 Business Days</td>
             </tr>
             <tr>
-              <td class="service-name">Dress Tailoring</td>
-              <td class="service-price">$90</td>
-              <td>3 Days</td>
+              <td class="service-name">Dresses (starting from $30 to $100 depending on layers)</td>
+              <td class="service-price">$30-100</td>
+              <td>3-7 Business Days</td>
             </tr>
             <tr>
-              <td class="service-name">Jacket Sleeve Shortening</td>
-              <td class="service-price">$55</td>
-              <td>2 Days</td>
+              <td class="service-name">Shirts</td>
+              <td class="service-price">$15-25</td>
+              <td>3-5 Business Days</td>
             </tr>
             <tr>
-              <td class="service-name">Waist Adjustment</td>
-              <td class="service-price">$25</td>
-              <td>1 Day</td>
+              <td class="service-name">Skirts</td>
+              <td class="service-price">$20-40</td>
+              <td>3-7 Business Days</td>
+            </tr>
+            <tr>
+              <td class="service-name">Regular Hemming</td>
+              <td class="service-price">Varies</td>
+              <td>3-5 Business Days</td>
+            </tr>
+            <tr>
+              <td class="service-name">Dress Hemming</td>
+              <td class="service-price">Varies</td>
+              <td>Varies</td>
+            </tr>
+            <tr>
+              <td class="service-name">Custom Alterations</td>
+              <td class="service-price">Contact Us</td>
+              <td>Varies</td>
             </tr>
           </tbody>
         </table>
@@ -482,7 +497,7 @@
               data-bs-parent="#faqAccordion"
             >
               <div class="accordion-body">
-                Most standard alterations are completed within 1–3 days. More complex tailoring work may take longer depending on the garment and required adjustments.
+                Standard turnaround time is 7-10 business days. We offer express service with 1-2 business days turnaround. Express service has an additional 30% charge.
               </div>
             </div>
           </div>
@@ -644,20 +659,20 @@
 <section>
     <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
-    <div class="modal-content booking-modal">
+<div class="modal-content booking-modal">
       
-      <div class="modal-header booking-modal-header">
-        <h5 class="modal-title fw-bold" id="bookingModalLabel">Book a Fitting</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
+<div class="modal-header booking-modal-header">
+<h5 class="modal-title fw-bold" id="bookingModalLabel">Book a Fitting</h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
 
-      <div class="modal-body booking-modal-body">
+<div class="modal-body booking-modal-body">
         <!-- Success Alert -->
-        <div class="alert alert-success d-none" id="bookingSuccessAlert" role="alert">
+<div class="alert alert-success d-none" id="bookingSuccessAlert" role="alert">
           Thank you! Your booking request has been received. We'll be in touch shortly.
         </div>
 
-        <form id="bookingForm" class="needs-validation" method="POST" action="#" novalidate>
+        <form id="bookingForm" class="needs-validation"  novalidate>
           <div class="row g-4" id="bookingFormFields">
             
             <!-- Row 1 -->
@@ -681,9 +696,11 @@
                 class="form-control"
                 id="phoneNumber"
                 name="phoneNumber"
+                maxlength="14"
+                placeholder="(555) 123-4567"
                 required
               >
-              <div class="invalid-feedback">Please enter your phone number.</div>
+              <div class="invalid-feedback">Please enter a valid 10-digit US phone number.</div>
               <div class="valid-feedback">Looks good.</div>
             </div>
 
@@ -745,13 +762,14 @@
                 required
               >
                 <option value="" selected disabled>Select a Time</option>
-                <option value="10:00 AM - 11:00 AM">10:00 AM – 11:00 AM</option>
-                <option value="11:00 AM - 12:00 PM">11:00 AM – 12:00 PM</option>
-                <option value="12:00 PM - 1:00 PM">12:00 PM – 1:00 PM</option>
-                <option value="2:00 PM - 3:00 PM">2:00 PM – 3:00 PM</option>
-                <option value="3:00 PM - 4:00 PM">3:00 PM – 4:00 PM</option>
-                <option value="4:00 PM - 5:00 PM">4:00 PM – 5:00 PM</option>
-                <option value="5:00 PM - 6:00 PM">5:00 PM – 6:00 PM</option>
+                <option value="10:00">10:00 AM – 11:00 AM</option>
+                <option value="11:00">11:00 AM – 12:00 PM</option>
+                <option value="12:00">12:00 PM – 1:00 PM</option>
+                <option value="13:00">1:00 PM – 2:00 PM</option>
+                <option value="14:00">2:00 PM – 3:00 PM</option>
+                <option value="15:00">3:00 PM – 4:00 PM</option>
+                <option value="16:00">4:00 PM – 5:00 PM</option>
+                <option value="17:00">5:00 PM – 6:00 PM</option>
               </select>
               <div class="invalid-feedback">Please select a time slot.</div>
               <div class="valid-feedback">Looks good.</div>
@@ -873,5 +891,3 @@
 <script src="javascript.js"></script>
 </body>
 </html>
-
-
